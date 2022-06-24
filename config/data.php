@@ -119,4 +119,29 @@ $data_footer_second = [
     ],
 ];
 
-return array_merge($data_header, $data_footer, $data_footer_second);
+$bonus = [
+    'bonusArray' => [
+        [
+            'img' => 'buy-comics-digital-comics.png',
+            'text' => 'Digital comics',
+        ],
+        [
+            'img' => 'buy-comics-merchandise.png',
+            'text' => 'DC Merchandise',
+        ],
+        [
+            'img' => 'buy-comics-subscriptions.png',
+            'text' => 'Subscription',
+        ],
+        [
+            'img' => 'buy-comics-shop-locator.png',
+            'text' => 'Comic Shop Locator',
+        ],
+        [
+            'img' => 'buy-dc-power-visa.svg',
+            'text' => 'DC Power Visa',
+        ],
+    ],
+];
+
+return array_merge($data_header, $data_footer, $data_footer_second, $bonus);

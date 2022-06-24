@@ -15,10 +15,10 @@
 <body>
     @include('partials.header')
 
-    <main>
+    <main class="main">
         @yield('content')
     </main>
-
+    @include('partials.bonus')
     @include('partials.footer')
 </body>
 
