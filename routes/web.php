@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
+$data = config('data');
+$comics = config('comics');
+$data = array_merge($data, ['comics' => $comics]);
+
+Route::get('/', function () use($data) {
+    return view('homepage', $data);
+})->name('homepage');
+
+
+Route::get('/about', function () use($data) {
+    return view('homepage', $data);
 })->name('homepage');

@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    color: #0282f9;
+    background-color: white;
+
+    &__container {
+        width: 80%;
+        height: 120px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    &__logo {
+        min-width: 500px;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0.4rem;
+            padding: 3rem 0.4rem;
+            text-transform: uppercase;
+            border-bottom: 4px solid transparent;
+
+            &.active {
+                border-color: lightseagreen;
+            }
+
+            &.active a {
+                color: lightseagreen;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
