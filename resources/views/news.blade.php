@@ -1,7 +1,7 @@
 @extends('layout.appNoBonus')
 
 @section('title')
-    DC Comics | Comics
+    DC Comics | News
 @endsection
 
 @section('content')

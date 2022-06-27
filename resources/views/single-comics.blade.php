@@ -17,11 +17,12 @@
                 <h1>{{ $currentComics['title'] }}</h1>
                 <div class="green_band">
                     <div class="left_col">
-                        <div>U.S. Price: <span class="white">{{ $currentComics['price'] }}</span></div>
-                        <div>AVAILABLE</div>
+                        <div class="lighter">U.S. Price: <span class="white">{{ $currentComics['price'] }}</span></div>
+                        <div class="lighter">AVAILABLE</div>
                     </div>
                     <div class="right_col">
                         <div class="white">Check Availability</div>
+                        <i class="fas fa-caret-down"></i>
                     </div>
                 </div>
                 <p>

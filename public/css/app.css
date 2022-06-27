@@ -111,14 +111,12 @@ img {
 }
 .main .thumb__img {
   margin-top: 1rem;
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: 70%;
 }
 .main .thumb__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: top;
      object-position: top;
 }
@@ -130,7 +128,7 @@ img {
   text-transform: uppercase;
 }
 .main .thumb a h3 {
-  margin-top: 0.5rem;
+  padding-top: 2rem;
   font-size: inherit;
   font-weight: inherit;
 }
@@ -308,8 +306,18 @@ img {
   align-items: center;
   margin: 0 1rem;
 }
+.container-fluid .container .green_band .left_col .lighter {
+  font-weight: lighter;
+}
 .container-fluid .container .green_band .right_col {
-  width: 25%;
+  min-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container-fluid .container .green_band .right_col i {
+  font-size: 0.75rem;
+  color: white;
 }
 .container-fluid .container p {
   width: 90%;
@@ -328,7 +336,7 @@ img {
 }
 
 .container-fluid_2 {
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-top: 2rem;
   border-top: 2px solid #e6e6e6;
   background-color: #f6f6f6;
@@ -336,7 +344,7 @@ img {
 
 .container_2 {
   width: 70%;
-  margin: 5rem auto;
+  margin: 3rem auto;
   display: flex;
   justify-content: space-evenly;
 }
@@ -380,4 +388,13 @@ img {
 
 .border-bottom {
   border-bottom: 1px solid #e6e6e6;
+}
+
+#placeholder {
+  width: 100%;
+  padding: 100px 0;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: white;
+  color: black;
 }

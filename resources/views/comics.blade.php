@@ -7,6 +7,5 @@
 @section('content')
     <div class="main__banner">
         <div class="main__series">Current Series</div>
-    </div>
-    
+    </div> 
 @endsection
