@@ -59,11 +59,20 @@
                 object-position: top;
             }
         }
-        h3 {
+        a {
+            color: white;
+            text-decoration: none;
             font-size: 0.8rem;
             font-weight: lighter;
             text-transform: uppercase;
-            margin-top: 0.5rem;
+            h3 {
+                margin-top: 0.5rem;
+                font-size: inherit;
+                font-weight: inherit;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

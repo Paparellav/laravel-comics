@@ -3,43 +3,43 @@
 $data_header = [
     'menuArray' => [
         [
-            'url' => '#',
+            'name' => 'characters',
             'text' => 'Characters',
         ],
         [
-            'url' => '#',
+            'name' => 'comics',
             'text' => 'Comics',
         ],
         [
-            'url' => '#',
+            'name' => 'movies',
             'text' => 'Movies',
         ],
         [
-            'url' => '#',
+            'name' => 'tv',
             'text' => 'Tv',
         ],
         [
-            'url' => '#',
+            'name' => 'games',
             'text' => 'Games',
         ],
         [
-            'url' => '#',
+            'name' => 'collectibles',
             'text' => 'Collectibles',
         ],
         [
-            'url' => '#',
+            'name' => 'videos',
             'text' => 'Videos',
         ],
         [
-            'url' => '#',
+            'name' => 'fans',
             'text' => 'Fans',
         ],
         [
-            'url' => '#',
+            'name' => 'news',
             'text' => 'News',
         ],
         [
-            'url' => '#',
+            'name' => 'shop',
             'text' => 'Shop',
         ],
     ],

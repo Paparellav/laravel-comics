@@ -10,12 +10,11 @@
     </div>
     <div class="main__container">
         @foreach ($comics as $item)
-            <div class="thumb">
-                <div class="thumb__img">
-                    <img src="{{ $item['thumb'] }}" alt="{{ $item['series'] }}">
-                </div>
-                <h3>{{ $item['series'] }}</h3>
-            </div>
+            @include('components.single-comics-card', [
+                "id" => $item['id'],
+                "thumb" => $item['thumb'],
+                "series" => $item['series']
+            ])
         @endforeach
         <div class="load-more-btn">
             <a href="#">Load more</a>
