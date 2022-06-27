@@ -60,18 +60,15 @@ Route::get('/shop', function () use ($data) {
 
 Route::get('/comics/{id}', function ($id) use ($data) {
     $comics = collect(config('comics'));
-    $current_comics = $comics->where('id', $id);
+    
+    $current_comics = $comics->where('id', $id)->first();
 
     if (!$current_comics) {
         return abort(404);
     }
 
-    $data = array_merge($data, $comics, $current_comics);
-
-    // $data = array_merge($comics, ['comics' => $current_comics]);
+    $data = array_merge($data, ['currentComics' => $current_comics]);
     return view('single-comics', $data);
 })->name('single-comics');
 
-// Route::get('/single-comics', function () use ($data) {
-//     return view('single-comics', $data);
-// })->name('single-comics');
+

@@ -7,7 +7,7 @@
             <ul class="header__menu">
                 @foreach ($menuArray as $item)
                     <li class="{{ Request::route()->getName() === $item['name'] ? 'active' : '' }}">
-                        <a href="{{ $item['name'] }}">
+                        <a href="{{ route($item['name']) }}">
                             {{ $item['text'] }}
                         </a>
                     </li>

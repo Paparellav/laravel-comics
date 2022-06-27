@@ -20,9 +20,6 @@
 .container-fluid {
     width: 100%;
     padding-top: 6rem;
-    padding-bottom: 3rem;
-    // debug
-    // height: 800px;
     background-color: white;
     color: black;
 
@@ -32,16 +29,20 @@
         display: flex;
         h1 {
             text-transform: uppercase;
+            color: #003f5e;
         }
         .green_band {
-            width: 90%;
+            width: 95%;
             height: 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 2rem;
-            background-color: green;
-            color: white;
+            background-color: #55ba59;
+            color: #abec72;
+            .white {
+                color: white;
+            }
             .left_col {
                 width: 100%;
                 display: flex;
@@ -56,40 +57,70 @@
         p {
             width: 90%;
             margin-top: 2rem;
+            color: #666566;
         }
         .adv {
             text-align: right;
             img {
-                width: 300px;
+                width: 380px;
             }
             &_text {
                 margin-bottom: 1rem;
+                color: #585a5d;
             }
         }
     }
-    .container_2 {
-        width: 70%;
-        margin: 5rem auto;
+}
+.container-fluid_2 {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 2px solid #e6e6e6;
+    background-color: #f6f6f6;
+}
+.container_2 {
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    h2 {
+        padding: 1rem 0;
+        color: #003f5e;
+    }
+    .table {
         display: flex;
-        justify-content: space-evenly;
-        .table {
+        justify-content: space-between;
+        width: 600px;
+        div {
+            width: calc(100% / 2);
+            margin: 1rem 0;
+            small {
+                color: #0282f9;
+            }
+        }
+    }
+    .table_2 {
+        width: 300px;
+        margin-top: 0;
+        div {
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            width: 600px;
-            div {
-                width: calc(100% / 2);
-                margin: 1rem 0;
-            }
+            margin: 1rem 0;
         }
-        .table_2 {
-            width: 300px;
-            margin-top: 1rem;
-            div {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 1rem;
-            }
+        .serie {
+            color: #0282f9;
+            text-transform: uppercase;
         }
     }
+    .blue {
+        color: #003f5e;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e6e6e6;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e6e6e6;
 }

@@ -276,7 +276,6 @@ img {
 .container-fluid {
   width: 100%;
   padding-top: 6rem;
-  padding-bottom: 3rem;
   background-color: white;
   color: black;
 }
@@ -287,15 +286,19 @@ img {
 }
 .container-fluid .container h1 {
   text-transform: uppercase;
+  color: #003f5e;
 }
 .container-fluid .container .green_band {
-  width: 90%;
+  width: 95%;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  background-color: green;
+  background-color: #55ba59;
+  color: #abec72;
+}
+.container-fluid .container .green_band .white {
   color: white;
 }
 .container-fluid .container .green_band .left_col {
@@ -311,38 +314,70 @@ img {
 .container-fluid .container p {
   width: 90%;
   margin-top: 2rem;
+  color: #666566;
 }
 .container-fluid .container .adv {
   text-align: right;
 }
 .container-fluid .container .adv img {
-  width: 300px;
+  width: 380px;
 }
 .container-fluid .container .adv_text {
   margin-bottom: 1rem;
+  color: #585a5d;
 }
-.container-fluid .container_2 {
+
+.container-fluid_2 {
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 2px solid #e6e6e6;
+  background-color: #f6f6f6;
+}
+
+.container_2 {
   width: 70%;
   margin: 5rem auto;
   display: flex;
   justify-content: space-evenly;
 }
-.container-fluid .container_2 .table {
+.container_2 h2 {
+  padding: 1rem 0;
+  color: #003f5e;
+}
+.container_2 .table {
   display: flex;
   justify-content: space-between;
   width: 600px;
 }
-.container-fluid .container_2 .table div {
+.container_2 .table div {
   width: 50%;
   margin: 1rem 0;
 }
-.container-fluid .container_2 .table_2 {
-  width: 300px;
-  margin-top: 1rem;
+.container_2 .table div small {
+  color: #0282f9;
 }
-.container-fluid .container_2 .table_2 div {
+.container_2 .table_2 {
+  width: 300px;
+  margin-top: 0;
+}
+.container_2 .table_2 div {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+}
+.container_2 .table_2 .serie {
+  color: #0282f9;
+  text-transform: uppercase;
+}
+.container_2 .blue {
+  color: #003f5e;
+}
+
+.border-top {
+  border-top: 1px solid #e6e6e6;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e6e6e6;
 }

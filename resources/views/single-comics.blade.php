@@ -7,25 +7,25 @@
 @section('content')
     <div class="main__banner">
         <div class="main__series_2">
-            <img src="{{ $comics[0]['thumb'] }}" alt="{{ $comics[0]['series'] }}">
+            <img src="{{ $currentComics['thumb'] }}" alt="{{ $currentComics['series'] }}">
         </div>
     </div>
     <div class="blue_band"></div>
     <div class="container-fluid">
         <div class="container">
             <div>
-                <h1>{{ $comics[0]['title'] }}</h1>
+                <h1>{{ $currentComics['title'] }}</h1>
                 <div class="green_band">
                     <div class="left_col">
-                        <div>U.S. Price: {{ $comics[0]['price'] }}</div>
+                        <div>U.S. Price: <span class="white">{{ $currentComics['price'] }}</span></div>
                         <div>AVAILABLE</div>
                     </div>
                     <div class="right_col">
-                        <div>Check Availability</div>
+                        <div class="white">Check Availability</div>
                     </div>
                 </div>
                 <p>
-                    {{ $comics[0]['description'] }}
+                    {{ $currentComics['description'] }}
                 </p>
             </div>
             <div class="adv">
@@ -33,40 +33,42 @@
                 <img src="{{ asset('../images/adv.jpg') }}" alt="">
             </div>
         </div>
-        <div class="container_2">
-            <div>
-                <h2>Talent</h2>
-                <div class="table">
-                    <div>Art by:</div>
-                    <div>
-                        @foreach ($comics[0]['artists'] as $artist)
-                            <small>{{ $artist }}</small>
-                        @endforeach
+        <div class="container-fluid_2">
+            <div class="container_2">
+                <div>
+                    <h2>Talent</h2>
+                    <div class="table border-top border-bottom">
+                        <div class="blue">Art by:</div>
+                        <div>
+                            @foreach ($currentComics['artists'] as $artist)
+                                <small>{{ $artist }}</small>,
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="table border-bottom">
+                        <div class="blue">Written by:</div>
+                        <div>
+                            @foreach ($currentComics['writers'] as $writer)
+                                <small>{{ $writer }}</small>,
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-                <div class="table">
-                    <div>Written by:</div>
-                    <div>
-                        @foreach ($comics[0]['writers'] as $writer)
-                            <small>{{ $writer }}</small>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>Specs</h2>
-                <div class="table_2">
-                    <div>
-                        <div>Series: </div>
-                        <div>{{ $comics[0]['series'] }}</div>
-                    </div>
-                    <div>
-                        <div>U.S. Price: </div>
-                        <div>{{ $comics[0]['price'] }}</div>
-                    </div>
-                    <div>
-                        <div>On Sale Date: </div>
-                        <div>{{ $comics[0]['sale_date'] }}</div>
+                <div>
+                    <h2>Specs</h2>
+                    <div class="table_2 border-top">
+                        <div class="border-bottom">
+                            <div class="blue">Series: </div>
+                            <div class="serie">{{ $currentComics['series'] }}</div>
+                        </div>
+                        <div class="border-bottom">
+                            <div class="blue">U.S. Price: </div>
+                            <div>{{ $currentComics['price'] }}</div>
+                        </div>
+                        <div class="border-bottom">
+                            <div class="blue">On Sale Date: </div>
+                            <div>{{ $currentComics['sale_date'] }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
