@@ -58,20 +58,20 @@ Route::get('/shop', function () use ($data) {
     return view('shop', $data);
 })->name('shop');
 
-// Route::get('/comics/{id}', function ($id) use ($data) {
-//     $data = collect('comics');
-//     $current_comics = $data->where('id', $id)->first();
+Route::get('/comics/{id}', function ($id) use ($data) {
+    $comics = collect(config('comics'));
+    $current_comics = $comics->where('id', $id);
 
-//     if (!$current_comics) {
-//         return abort(404);
-//     }
+    if (!$current_comics) {
+        return abort(404);
+    }
 
-//     $data = array_merge($data, [
-//         'comics' => $current_comics
-//     ]);
-//     return view('single-comics', $data);
-// })->name('single-comics');
+    $data = array_merge($data, $comics, $current_comics);
 
-Route::get('/single-comics', function () use ($data) {
+    // $data = array_merge($comics, ['comics' => $current_comics]);
     return view('single-comics', $data);
 })->name('single-comics');
+
+// Route::get('/single-comics', function () use ($data) {
+//     return view('single-comics', $data);
+// })->name('single-comics');
